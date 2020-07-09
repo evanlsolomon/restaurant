@@ -12,7 +12,7 @@ const HEADER = (() => {
         navbarDOM = document.createElement("nav");
 
         let aboutUsButton = createNavButton("Home");
-        let menuButton = createNavButton("About");
+        let menuButton = createNavButton("Menu");
         let contactButton = createNavButton("Contact Us");
         
         buttonsDOM.push(aboutUsButton, menuButton, contactButton);

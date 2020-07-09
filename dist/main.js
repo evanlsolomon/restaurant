@@ -86,39 +86,27 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/about.js":
-/*!**********************!*\
-  !*** ./src/about.js ***!
-  \**********************/
-/*! exports provided: ABOUT */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ABOUT\", function() { return ABOUT; });\n/* harmony import */ var _assets_fresh_ingredients_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/fresh-ingredients.jpg */ \"./src/assets/fresh-ingredients.jpg\");\n\n\nconst ABOUT = (() => {\n    const TEXT1 = \"Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Cras adipiscing enim eu turpis egestas pretium aenean pharetra, magna!\";\n    const TEXT2 = \"Etiam quis interdum augue. Mauris vel nisl in sapien malesuada condimentum. Curabitur porta eleifend elit, et varius elit blandit vitae. In sit amet consequat purus. In hac habitasse platea dictumst. Donec volutpat facilisis suscipit. In ac nisl nec orci pretium sagittis vitae sit amet orci. Aliquam cursus ipsum in commodo tempus. Nulla lobortis, quam eu scelerisque maximus, lacus dolor auctor ipsum, eget suscipit orci sem in tellus.\";\n\n    let aboutDivDOM;\n\n    const render = () => {\n        // body.clearMain();\n        aboutDivDOM = document.createElement(\"div\");\n        aboutDivDOM.id = \"about-div\";\n        aboutDivDOM.classList.add(\"content-div\");\n        let image = new Image();\n        image.src = _assets_fresh_ingredients_jpg__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n        image.classList.add(\"cover\");\n        \n        let h2 = document.createElement(\"h2\");\n        h2.innerText = TEXT1;\n\n        let h3 = document.createElement(\"h3\");\n        h3.innerText = TEXT2;\n\n        aboutDivDOM.appendChild(image);\n        aboutDivDOM.appendChild(h2);\n        aboutDivDOM.appendChild(h3);\n        document.body.appendChild(aboutDivDOM);\n\n\n    }\n\n    return {render};\n\n})();\n\n\n\n//# sourceURL=webpack:///./src/about.js?");
-
-/***/ }),
-
-/***/ "./src/addContentComponent.js":
-/*!************************************!*\
-  !*** ./src/addContentComponent.js ***!
-  \************************************/
+/***/ "./src/assets/chocolateOliveOilCookies.jpg":
+/*!*************************************************!*\
+  !*** ./src/assets/chocolateOliveOilCookies.jpg ***!
+  \*************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n\nfunction addComponent(htmlType, propertyObject, contentContainer) {\n    const element = document.createElement(htmlType);\n    const value = propertyObject[htmlType];\n    \n    if(htmlType === 'h1'){\n        element.textContent  = value;\n    } else if (htmlType === 'img'){\n        element.src = value[0];\n        element.style.height = \"400px\"\n    } else if (htmlType === ('p' || false || false) ) {\n        for (let i = 0; i< value.length-1; i++){\n            const extra = document.createElement(htmlType);\n            extra.textContent = value[i];\n            parent.appendChild(extra);\n        }\n        element.textContent = value[value.length - 1];\n    } else {\n        console.error('UNKNOWN PROP TYPE')\n    }\n    contentContainer.appendChild(element);\n}\n/* harmony default export */ __webpack_exports__[\"default\"] = (addComponent);\n\n\n//# sourceURL=webpack:///./src/addContentComponent.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"7eba4fb0bbd69840f436373831b67f2e.jpg\");\n\n//# sourceURL=webpack:///./src/assets/chocolateOliveOilCookies.jpg?");
 
 /***/ }),
 
-/***/ "./src/assets/fresh-ingredients.jpg":
-/*!******************************************!*\
-  !*** ./src/assets/fresh-ingredients.jpg ***!
-  \******************************************/
+/***/ "./src/assets/oysters.jpg":
+/*!********************************!*\
+  !*** ./src/assets/oysters.jpg ***!
+  \********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"dee6d4d56a070d7c0a8e7443d8eb53f8.jpg\");\n\n//# sourceURL=webpack:///./src/assets/fresh-ingredients.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"2377d2f1e6bcb67668a356abfafc25a1.jpg\");\n\n//# sourceURL=webpack:///./src/assets/oysters.jpg?");
 
 /***/ }),
 
@@ -134,6 +122,30 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
+/***/ "./src/assets/sausageEggplantFried.jpg":
+/*!*********************************************!*\
+  !*** ./src/assets/sausageEggplantFried.jpg ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"dfd6a977db9d7577f07f7470c9e59543.jpg\");\n\n//# sourceURL=webpack:///./src/assets/sausageEggplantFried.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/steaksalad.jpg":
+/*!***********************************!*\
+  !*** ./src/assets/steaksalad.jpg ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"4f8d196928bdbc35b8653405c3ff3d57.jpg\");\n\n//# sourceURL=webpack:///./src/assets/steaksalad.jpg?");
+
+/***/ }),
+
 /***/ "./src/composePageContent.js":
 /*!***********************************!*\
   !*** ./src/composePageContent.js ***!
@@ -142,19 +154,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"composePageContent\", function() { return composePageContent; });\n/* harmony import */ var _createContentComponent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./createContentComponent */ \"./src/createContentComponent.js\");\n\n\nlet contentDiv = document.createElement('div');\n\nconst composePageContent = (contentObject) => {\n    for(let contentElement in contentObject){\n        let newElement = Object(_createContentComponent__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(contentElement,contentObject[contentElement]);\n        contentDiv.appendChild(newElement);\n    }\n    return contentDiv;\n}\n\n\n\n\n\n//# sourceURL=webpack:///./src/composePageContent.js?");
-
-/***/ }),
-
-/***/ "./src/contact.js":
-/*!************************!*\
-  !*** ./src/contact.js ***!
-  \************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _addContentComponent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./addContentComponent */ \"./src/addContentComponent.js\");\n\n\nfunction contact() {\n    const pageContent = {\n        h1: 'Contact us',\n        address1: '735 Broad Way',\n        address2: 'Far far away, FR 49285',\n        phone: '0e9-9438',\n        email: 'nomail@notmail.neptune'\n    };\n    \n    const contentContainer = document.getElementById('content');\n    \n    for (const property in pageContent){\n        // const value = pageContent[property];\n        // if (property === 'h1') {\n        //     contentContainer.appendChild(make)\n        // }\n        Object(_addContentComponent__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(property, pageContent, contentContainer)\n    }\n    \n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (contact);\n\n//# sourceURL=webpack:///./src/contact.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"composePageContent\", function() { return composePageContent; });\n/* harmony import */ var _createContentComponent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./createContentComponent */ \"./src/createContentComponent.js\");\n/* harmony import */ var _createMenuCard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./createMenuCard */ \"./src/createMenuCard.js\");\n\n\n\nlet contentDiv = document.getElementById(\"content\");\n\nconst composePageContent = (contentObject, page) => {\n    if(page === \"menu\"){\n        for(let menuItem of contentObject){\n            let newMenuCard = Object(_createMenuCard__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(menuItem);\n            contentDiv.appendChild(newMenuCard);\n        }\n    }\n    else if(page === \"home\"){\n        for(let contentElement in contentObject){\n            let newElement = Object(_createContentComponent__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(contentElement,contentObject[contentElement]);\n            contentDiv.appendChild(newElement);\n        }\n    }\n    return contentDiv;\n}\n\n\n\n\n\n//# sourceURL=webpack:///./src/composePageContent.js?");
 
 /***/ }),
 
@@ -166,7 +166,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _add
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nconst createComponent = (htmlType, value) => {\n    const element = document.createElement(htmlType);\n    \n    if(htmlType === 'h1'){\n        element.textContent  = value;\n    } else if (htmlType === 'img'){\n        element.src = value[0];\n        element.style.height = \"400px\"\n    } else if (htmlType === ('p' || false || false) ) {\n        for (let i = 0; i< value.length-1; i++){\n            const extra = document.createElement(htmlType);\n            extra.textContent = value[i];\n            parent.appendChild(extra);\n        }\n        element.textContent = value[value.length - 1];\n    } else {\n        console.error('UNKNOWN PROP TYPE')\n    }\n    return element;\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (createComponent);\n\n\n//# sourceURL=webpack:///./src/createContentComponent.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nconst createComponent = (htmlType, value) => {\n\n    const element = document.createElement(htmlType);\n    \n    if(['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].includes(htmlType)){\n        element.textContent  = value;\n    } else if (htmlType === 'img'){\n        element.src = value[0];\n        element.style.height = \"400px\"\n    } else if (['p', 'address1', 'address2'].includes(htmlType)) {\n\n        for (let i = 0; i< value.length-1; i++){\n            const extra = document.createElement(htmlType);\n            extra.textContent = value[i];\n            parent.appendChild(extra);\n        }\n        element.textContent = value[value.length - 1];\n    } else {\n        console.error('UNKNOWN PROP TYPE')\n    }\n    return element;\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (createComponent);\n\n\n//# sourceURL=webpack:///./src/createContentComponent.js?");
+
+/***/ }),
+
+/***/ "./src/createMenuCard.js":
+/*!*******************************!*\
+  !*** ./src/createMenuCard.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _createContentComponent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./createContentComponent */ \"./src/createContentComponent.js\");\n\n\nfunction createMenuCard(menuItem) {\n\n    const card = document.createElement(\"div\");\n\n    for (let element in menuItem){\n        console.log(element);\n        let newElement = Object(_createContentComponent__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(element,menuItem[element]);\n        card.appendChild(newElement);\n    }\n\n    return card;\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (createMenuCard);\n\n\n//# sourceURL=webpack:///./src/createMenuCard.js?");
 
 /***/ }),
 
@@ -178,7 +190,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nconst createComponent = (html
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"HEADER\", function() { return HEADER; });\n\nconst HEADER = (() => {\n\n    let headerDOM\n    let navbarDOM;\n    let buttonsDOM = [];\n\n    const getButtons = () => buttonsDOM;\n\n    const render = () => {\n        headerDOM = document.createElement(\"header\");\n        navbarDOM = document.createElement(\"nav\");\n\n        let aboutUsButton = createNavButton(\"Home\");\n        let menuButton = createNavButton(\"About\");\n        let contactButton = createNavButton(\"Contact Us\");\n        \n        buttonsDOM.push(aboutUsButton, menuButton, contactButton);\n        \n        for(let button of buttonsDOM){\n            button.setAttribute(\"class\", \"button\");\n            navbarDOM.appendChild(button);\n        }\n        document.body.getElementsByTagName(\"header\")[0].appendChild(navbarDOM);\n    }\n\n    return {render, getButtons};\n\n})();\n\n\n\n\n\n\nfunction createNavButton(pageName){\n    let navButton = document.createElement(\"button\");\n    navButton.innerText = pageName;\n    let lowerCaseHyphenPageName = pageName.toLowerCase().replace(\" \", \"-\");\n    navButton.id = `${lowerCaseHyphenPageName}-btn`\n    navButton.value = lowerCaseHyphenPageName;\n    return navButton;\n}\n\n\n//# sourceURL=webpack:///./src/header.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"HEADER\", function() { return HEADER; });\n\nconst HEADER = (() => {\n\n    let headerDOM\n    let navbarDOM;\n    let buttonsDOM = [];\n\n    const getButtons = () => buttonsDOM;\n\n    const render = () => {\n        headerDOM = document.createElement(\"header\");\n        navbarDOM = document.createElement(\"nav\");\n\n        let aboutUsButton = createNavButton(\"Home\");\n        let menuButton = createNavButton(\"Menu\");\n        let contactButton = createNavButton(\"Contact Us\");\n        \n        buttonsDOM.push(aboutUsButton, menuButton, contactButton);\n        \n        for(let button of buttonsDOM){\n            button.setAttribute(\"class\", \"button\");\n            navbarDOM.appendChild(button);\n        }\n        document.body.getElementsByTagName(\"header\")[0].appendChild(navbarDOM);\n    }\n\n    return {render, getButtons};\n\n})();\n\n\n\n\n\n\nfunction createNavButton(pageName){\n    let navButton = document.createElement(\"button\");\n    navButton.innerText = pageName;\n    let lowerCaseHyphenPageName = pageName.toLowerCase().replace(\" \", \"-\");\n    navButton.id = `${lowerCaseHyphenPageName}-btn`\n    navButton.value = lowerCaseHyphenPageName;\n    return navButton;\n}\n\n\n//# sourceURL=webpack:///./src/header.js?");
 
 /***/ }),
 
@@ -190,7 +202,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"HOME\", function() { return HOME; });\n/* harmony import */ var _assets_pizza_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/pizza.jpg */ \"./src/assets/pizza.jpg\");\n/* harmony import */ var _composePageContent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./composePageContent */ \"./src/composePageContent.js\");\n\n\n\nconst HOME = (() => {\n\n    const render = () => {\n        const pageContent = {\n            h1: 'Welcome to our pizza house',\n            img: [_assets_pizza_jpg__WEBPACK_IMPORTED_MODULE_0__[\"default\"], 'homepage-img'],\n            p: ['the dough is crispy and thin'],\n        };\n        \n        const contentContainer = document.getElementById('content');\n        contentContainer.appendChild(Object(_composePageContent__WEBPACK_IMPORTED_MODULE_1__[\"composePageContent\"])(pageContent));\n\n    }\n    return {render};\n    \n})();\n\n\n\n//# sourceURL=webpack:///./src/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"HOME\", function() { return HOME; });\n/* harmony import */ var _assets_pizza_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/pizza.jpg */ \"./src/assets/pizza.jpg\");\n/* harmony import */ var _composePageContent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./composePageContent */ \"./src/composePageContent.js\");\n\n\n\nconst HOME = (() => {\n    const page = \"home\"\n    const pageContent = {\n        h1: 'Welcome to our pizza house',\n        img: [_assets_pizza_jpg__WEBPACK_IMPORTED_MODULE_0__[\"default\"], 'homepage-img'],\n        p: ['the dough is crispy and thin'],\n    };\n\n    const render = () => {Object(_composePageContent__WEBPACK_IMPORTED_MODULE_1__[\"composePageContent\"])(pageContent, page)};\n    return {render};    \n})();\n\n\n\n//# sourceURL=webpack:///./src/home.js?");
 
 /***/ }),
 
@@ -202,7 +214,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./contact */ \"./src/contact.js\");\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./about */ \"./src/about.js\");\n\n\n\n\n\n\n_header__WEBPACK_IMPORTED_MODULE_2__[\"HEADER\"].render();\n_home__WEBPACK_IMPORTED_MODULE_0__[\"HOME\"].render();\n\n\nconsole.log(_header__WEBPACK_IMPORTED_MODULE_2__[\"HEADER\"].getButtons());\n_header__WEBPACK_IMPORTED_MODULE_2__[\"HEADER\"].getButtons().forEach( button =>\n    button.addEventListener( \"click\", switchTab ) )\n\nfunction switchTab(event) {\n    let selectedPage = event.target.value;\n    document.getElementById(\"content\").innerHTML = \"\";\n    if(selectedPage === \"home\"){\n        _home__WEBPACK_IMPORTED_MODULE_0__[\"HOME\"].render();\n    } else if ( selectedPage === \"about\"){\n        _about__WEBPACK_IMPORTED_MODULE_3__[\"ABOUT\"].render();\n    } else if (selectedPage === \"contact-us\") {\n        console.log(\"render the contact page\");\n    }\n};\n\n// tab.render();\n// contact();\n\n\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n\n\n\n// import contact from './contact'\n\n//landing page;\n_header__WEBPACK_IMPORTED_MODULE_0__[\"HEADER\"].render();\n_home__WEBPACK_IMPORTED_MODULE_1__[\"HOME\"].render();\n\n\n_header__WEBPACK_IMPORTED_MODULE_0__[\"HEADER\"].getButtons().forEach( button =>\n    button.addEventListener( \"click\", switchTab ) )\n    \n    \n//tab nav\nfunction switchTab(event) {\n    let selectedPage = event.target.value;\n    document.getElementById(\"content\").innerHTML = \"\";\n    if(selectedPage === \"home\"){\n        _home__WEBPACK_IMPORTED_MODULE_1__[\"HOME\"].render();\n    } else if ( selectedPage === \"menu\"){\n        _menu__WEBPACK_IMPORTED_MODULE_2__[\"MENU\"].render();\n    } else if (selectedPage === \"contact-us\") {\n        console.log(\"render the contact page\");\n    }\n};\n\n\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/menu.js":
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
+/*! exports provided: MENU */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"MENU\", function() { return MENU; });\n/* harmony import */ var _assets_oysters_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/oysters.jpg */ \"./src/assets/oysters.jpg\");\n/* harmony import */ var _assets_steaksalad_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/steaksalad.jpg */ \"./src/assets/steaksalad.jpg\");\n/* harmony import */ var _assets_pizza_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/pizza.jpg */ \"./src/assets/pizza.jpg\");\n/* harmony import */ var _assets_sausageEggplantFried_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/sausageEggplantFried.jpg */ \"./src/assets/sausageEggplantFried.jpg\");\n/* harmony import */ var _assets_chocolateOliveOilCookies_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/chocolateOliveOilCookies.jpg */ \"./src/assets/chocolateOliveOilCookies.jpg\");\n/* harmony import */ var _composePageContent__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./composePageContent */ \"./src/composePageContent.js\");\n\n\n\n\n\n\n\nconst menuItems = [\n    {\n        h4: \"Oysters\",\n        p: ['8'],\n        img: [_assets_oysters_jpg__WEBPACK_IMPORTED_MODULE_0__[\"default\"], \"oysters\"],\n    },\n    {   h4: \"Steak Salad\",\n        p: ['9'],\n        img: [_assets_steaksalad_jpg__WEBPACK_IMPORTED_MODULE_1__[\"default\"], 'steak-salad']\n    },\n    {   h4: \"Pizza\",\n        p: ['11'],\n        img: [_assets_pizza_jpg__WEBPACK_IMPORTED_MODULE_2__[\"default\"], 'homemade-pizza']\n    },\n    {   h4: \"Sausage Eggplant Stir-fry\",\n        p: ['7'],\n        img: [_assets_sausageEggplantFried_jpg__WEBPACK_IMPORTED_MODULE_3__[\"default\"], 'sausage-and-veggie-stirfry']\n    },\n    {   h4: \"Cookies\",\n        p: ['12'],\n        img: [_assets_chocolateOliveOilCookies_jpg__WEBPACK_IMPORTED_MODULE_4__[\"default\"], 'cookies']\n    }\n];\n\nconst MENU = (() => {\n        const page = \"menu\";\n        const pageContent = menuItems;\n\n    const render = () => {Object(_composePageContent__WEBPACK_IMPORTED_MODULE_5__[\"composePageContent\"])(pageContent, page)};\n    return {render};    \n})();\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/menu.js?");
 
 /***/ })
 
